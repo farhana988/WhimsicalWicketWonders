@@ -1,0 +1,202 @@
+[
+    {
+        "playerId": 1,
+        "name": "Virat Kohli",
+        "country": "India",
+        "image": "https://example.com/images/virat_kohli.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 1000000
+    },
+    {
+        "playerId": 2,
+        "name": "Babar Azam",
+        "country": "Pakistan",
+        "image": "https://example.com/images/babar_azam.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 800000
+    },
+    {
+        "playerId": 3,
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "image": "https://example.com/images/kane_williamson.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 900000
+    },
+    {
+        "playerId": 4,
+        "name": "Ben Stokes",
+        "country": "England",
+        "image": "https://example.com/images/ben_stokes.png",
+        "role": "All-rounder",
+        "battingType": "Left-handed",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 1200000
+    },
+    {
+        "playerId": 5,
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "image": "https://example.com/images/rashid_khan.png",
+        "role": "Bowler",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm leg spin",
+        "biddingPrice": 700000
+    },
+    {
+        "playerId": 6,
+        "name": "David Warner",
+        "country": "Australia",
+        "image": "https://example.com/images/david_warner.png",
+        "role": "Batsman",
+        "battingType": "Left-handed",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 950000
+    },
+    {
+        "playerId": 7,
+        "name": "Jasprit Bumrah",
+        "country": "India",
+        "image": "https://example.com/images/jasprit_bumrah.png",
+        "role": "Bowler",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": 1100000
+    },
+    {
+        "playerId": 8,
+        "name": "Shakib Al Hasan",
+        "country": "Bangladesh",
+        "image": "https://example.com/images/shakib_al_hasan.png",
+        "role": "All-rounder",
+        "battingType": "Left-handed",
+        "bowlingType": "Left-arm orthodox",
+        "biddingPrice": 850000
+    },
+    {
+        "playerId": 9,
+        "name": "Trent Boult",
+        "country": "New Zealand",
+        "image": "https://example.com/images/trent_boult.png",
+        "role": "Bowler",
+        "battingType": "Right-handed",
+        "bowlingType": "Left-arm fast",
+        "biddingPrice": 950000
+    },
+    {
+        "playerId": 10,
+        "name": "Steve Smith",
+        "country": "Australia",
+        "image": "https://example.com/images/steve_smith.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 1000000
+    },
+    {
+        "playerId": 11,
+        "name": "Quinton de Kock",
+        "country": "South Africa",
+        "image": "https://example.com/images/quinton_de_kock.png",
+        "role": "Wicketkeeper-Batsman",
+        "battingType": "Left-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 800000
+    },
+    {
+        "playerId": 12,
+        "name": "Mitchell Starc",
+        "country": "Australia",
+        "image": "https://example.com/images/mitchell_starc.png",
+        "role": "Bowler",
+        "battingType": "Left-handed",
+        "bowlingType": "Left-arm fast",
+        "biddingPrice": 950000
+    },
+    {
+        "playerId": 13,
+        "name": "Eoin Morgan",
+        "country": "England",
+        "image": "https://example.com/images/eoin_morgan.png",
+        "role": "Batsman",
+        "battingType": "Left-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 700000
+    },
+    {
+        "playerId": 14,
+        "name": "Hardik Pandya",
+        "country": "India",
+        "image": "https://example.com/images/hardik_pandya.png",
+        "role": "All-rounder",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 850000
+    },
+    {
+        "playerId": 15,
+        "name": "Yuzvendra Chahal",
+        "country": "India",
+        "image": "https://example.com/images/yuzvendra_chahal.png",
+        "role": "Bowler",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm leg spin",
+        "biddingPrice": 600000
+    },
+    {
+        "playerId": 16,
+        "name": "Joe Root",
+        "country": "England",
+        "image": "https://example.com/images/joe_root.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 750000
+    },
+    {
+        "playerId": 17,
+        "name": "Marnus Labuschagne",
+        "country": "Australia",
+        "image": "https://example.com/images/marnus_labuschagne.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 700000
+    },
+    {
+        "playerId": 18,
+        "name": "Kagiso Rabada",
+        "country": "South Africa",
+        "image": "https://example.com/images/kagiso_rabada.png",
+        "role": "Bowler",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": 950000
+    },
+    {
+        "playerId": 19,
+        "name": "Rohit Sharma",
+        "country": "India",
+        "image": "https://example.com/images/rohit_sharma.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 1100000
+    },
+    {
+        "playerId": 20,
+        "name": "Shreyas Iyer",
+        "country": "India",
+        "image": "https://example.com/images/shreyas_iyer.png",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "N/A",
+        "biddingPrice": 600000
+    }
+]
