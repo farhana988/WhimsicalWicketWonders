@@ -63,13 +63,13 @@ export default function Footer() {
                     <p className='text-[#FFFFFF99]'>
                         Subscribe to our newsletter for the latest updates.
                     </p>
-                    <form className="w-[450px] space-x-4"> 
+                    <form className="w-[450px]"> 
                         <input
                         type="text"
                         placeholder="Enter your email"
-                        className="w-8/12 p-4 rounded-xl border-2" />
-                        <button className="rounded-xl p-4 text-black font-bold text-lg
-                        bg-gradient-to-r from-purple-400 via-orange-300 to-yellow-200">
+                        className="w-8/12 p-4 rounded-s-xl border-2" />
+                        <button className="rounded-e-xl p-4 text-black font-bold text-lg
+                        bg-gradient-to-l from-purple-500 via-orange-400 to-yellow-200">
                             Subscribe
                         </button>
                     </form>
