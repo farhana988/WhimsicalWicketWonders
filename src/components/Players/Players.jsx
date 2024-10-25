@@ -103,15 +103,16 @@ const handleAvailableplayers = () => {
             {available ? 'Available Players' : `Selected Players ${selected.length}/6`}
             </h2>
 
-            <div className='rounded-2xl border-2 border-red-700 text-xl text-[#13131399]'>
+            <div className='rounded-2xl text-xl text-[#13131399] outline-offset-8 outline
+              outline-[#86867f88]'>
             <button 
-                        className={`rounded-s-2xl p-6 ${available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
+                        className={`rounded-s-2xl py-4 px-6 ${available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
                         onClick={togglePlayers}
                     >
                         Available
                     </button>
                     <button 
-                        className={`rounded-e-2xl p-6 ${!available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
+                        className={`rounded-e-2xl py-4 px-6 ${!available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
                         onClick={togglePlayers}
                     >
                         Selected ({selected.length})

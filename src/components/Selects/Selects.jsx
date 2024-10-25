@@ -17,7 +17,7 @@ function Selects({selected, handleRemoveFromSelected, handleAvailableplayers}) {
     }
     <button
     onClick={handleAvailableplayers}
-     className=' mt-14 p-6 rounded-xl bg-[#E7FE29] font-bold text-xl 
+     className=' mt-14 py-4 px-6 rounded-xl bg-[#E7FE29] font-bold text-xl 
         outline-offset-8 outline  outline-[#86867f88]'>
             Add More Player
         </button>
