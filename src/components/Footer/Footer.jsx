@@ -3,12 +3,14 @@ import logoFooter from '../../assets/images/logo-footer.png'
 
 export default function Footer() {
   return (
-    <section className='bg-[#06091A] pb-4'>
+    <section className='bg-[#06091A] pb-4 mt-72 relative pt-60'>
         {/* Newsletter */}
         <div className='container mx-auto'>
             <div 
                 style={{backgroundImage: `url(${bgImage})`}} 
-                className='bg-cover h-80 mx-auto rounded-2xl bg-[#e9e4e4]'>
+                className='bg-cover h-80 w-10/12 rounded-2xl bg-[#faf7f7]  absolute 
+                left-32 bottom-[620px] outline-offset-[20px] outline  outline-white
+                items-center text-center flex justify-center'>
                 <div>
                     <h2>Subscribe to our Newsletter</h2>
                     <p className='text-[#131313B3]'>
@@ -28,7 +30,7 @@ export default function Footer() {
                 </div>
             </div>
             {/* logo image */}
-            <div className='flex flex-col justify-center items-center '>
+            <div className='flex flex-col justify-center items-center'>
                 <img src={logoFooter}  alt="" />
             </div>
             {/* footer */}

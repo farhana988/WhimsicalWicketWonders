@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 // import { FaBookmark } from 'react-icons/fa';
 
-const Player=({player})=> {
+const Player=({player, handleAddToSelected})=> {
     const {image,name,country,role,battingType,biddingPrice}=player
   return (
     <div className='border-2 border-red-700 gap-6'>
@@ -24,21 +24,24 @@ const Player=({player})=> {
 
         {/* batting type */}
         <p>Rating</p>
-        <div>
+        <div className='flex justify-between'>
             <h1>Batting Type:</h1>
             <h2>{battingType}</h2>
         </div>
         {/* price and button */}
-        <div>
+        <div className='flex justify-between'>
             <h1>Price: ${biddingPrice}</h1>
-            <button>Choose Player</button>
+            <button
+            onClick={ ()=>handleAddToSelected(player)}
+            >Choose Player</button>
         </div>
     </div>
   )
 }
 
 Player.propTypes = {
-    player: PropTypes.object.isRequired
+    player: PropTypes.object.isRequired,
+    handleAddToSelected: PropTypes.func
 }
 
 export default Player
