@@ -1,7 +1,8 @@
 
 import './App.css'
-// import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
+import Players from './components/Players/Players'
 
 function App() {
 
@@ -11,6 +12,9 @@ function App() {
       
       <Header></Header>
 
+<Players>
+  
+</Players>
 
 
 
@@ -27,8 +31,7 @@ function App() {
 
 
 
-
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
       
       
     </>
