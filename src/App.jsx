@@ -1,31 +1,32 @@
 
 // import { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Players from './components/Players/Players'
-// import Selects from './components/selects/Selects'
+
 
 function App() {
-//   const [selected, setSelected] = useState([]);
-//   const handleAddToSelected = player => {
-    
-//         const newSelected = [...selected, player];
-//         setSelected(newSelected);
-    
-// };
+  const [balance, setBalance] = useState(0) 
+  const addCredit = () => {
+      setBalance(count => count + 99999999);
+  };
 
-
-
+ 
   return (
     <>
       
-      <Header></Header>
+      <Header
+      balance={balance}
+      addCredit={addCredit}></Header>
 
-<Players ></Players>
+      <Players 
+      balance={balance}
+      setBalance={setBalance}
+      ></Players>
 
 
-{/* <Selects selected={selected}></Selects> */}
 
 
       <Footer></Footer>

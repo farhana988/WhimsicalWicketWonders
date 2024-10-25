@@ -1,10 +1,12 @@
+import PropTypes from 'prop-types'
 import logo from '../../assets/images/logo.png'
 import coin from '../../assets/images/coin.png'
 import bgImage from '../../assets/images/bgShadow.png'
 import banner from '../../assets/images/banner-main.png'
 
 
-export default function Header() {
+export default function Header({balance,addCredit}) {
+  
   return (
     <div className='container mx-auto my-8'>
         {/* navbar */}
@@ -16,7 +18,9 @@ export default function Header() {
                 <p>Teams</p>
                 <p>Schedules</p>
                 <button className=' p-3 px-5 border-2 border-[#1313131A] text-[#131313] rounded-xl flex gap-2 justify-center items-center'>
-                    <span>0 Coin</span>
+                    <span
+                
+                    >{balance} Coin</span>
                     <img src={coin} alt="" />
                 </button>
             </div>
@@ -37,7 +41,9 @@ export default function Header() {
                     Beyond Boundaries Beyond Limits
                 </p>
                 <div className='border-2 border-[#E7FE29] p-3 rounded-3xl'>
-                <button className='bg-[#E7FE29] text-[#131313] font-bold text-lg p-5 rounded-2xl' >
+                <button
+                  onClick={addCredit} 
+                className='bg-[#E7FE29] text-[#131313] font-bold text-lg p-5 rounded-2xl' >
                     Claim Free Credit
                 </button>
                 </div>
@@ -48,4 +54,8 @@ export default function Header() {
 
     
   )
+}
+Header.propTypes = {
+    balance:PropTypes.number,
+    addCredit:PropTypes.func
 }
