@@ -4,6 +4,8 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import Player from '../Player/Player'
 import Selects from '../selects/Selects'
+import { Flip, toast } from 'react-toastify'
+
 
 function Players({ balance , setBalance}){
    
@@ -18,9 +20,7 @@ function Players({ balance , setBalance}){
     
     const [available, setAvailable] = useState(true);
 
-    const togglePlayers = () => {
-        setAvailable(on => !on);
-    };
+    
 
     const [selected, setSelected] = useState([]);
     const [reducedBal, setReduceBal] = useState(balance); 
@@ -35,39 +35,95 @@ function Players({ balance , setBalance}){
     const handleAddToSelected = (player ) => {
 
        if(selected.length<6){
+        
             const playerPrice = player.biddingPrice; 
-            console.log("Current Balance:", reducedBal);
-        console.log("Player Price:", playerPrice);
+            // console.log("Current Balance:", reducedBal);
+            //  console.log("Player Price:", playerPrice);
             if (reducedBal < playerPrice ) {
-                alert("Insufficient balance");
+                // alert("");
+                toast.warn('Insufficient balance!', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Flip,
+                    });
                 return;
             }
-        if (selected.filter(selectedPlayer => selectedPlayer.playerId === player.playerId).length===0)
-        {
-            
-            const newSelected = [...selected, player];
-            setSelected(newSelected);
+            else if (selected.filter(selectedPlayer => selectedPlayer.playerId === player.playerId).length===0)
+            {
+                toast.success('successfully selected', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Flip,
+                    });
+                const newSelected = [...selected, player];
+                setSelected(newSelected);
 
-            const newBalance = reducedBal - playerPrice;
-            setReduceBal(newBalance);
-            setBalance(newBalance); 
-            
-        }
+                const newBalance = reducedBal - playerPrice;
+                setReduceBal(newBalance);
+                setBalance(newBalance); 
+                
+            }
        
-        else {
-            alert('already selected'); 
-        }
+            else {
+                // alert(''); 
+                toast.warn('already selected', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Flip,
+                    });
+            
+            }
     
        }
        else {
-        alert(' 6 players '); 
-    }
+        // alert(' '); 
+        toast.warn('players limit reached!', {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Flip,
+            });
+        }
   
    
-  };
+    };
   const handleRemoveFromSelected = (playerId) => {
     const playerToRemove = selected.find(player => player.playerId === playerId);
     if (playerToRemove) {
+        toast.success('successfully removed', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Flip,
+            });
         const newSelected = selected.filter(player => player.playerId !== playerId);
         setSelected(newSelected);
 
@@ -81,15 +137,7 @@ function Players({ balance , setBalance}){
 // ---------------------------------------------------------------------------------
 const handleAvailableplayers = () => {
    
-        {players
-            .filter(player => available ? !player.isSelected : player.isSelected)
-            .map(player => (
-                <Player 
-                    key={player.playerId}
-                    player={player}
-                   
-                />
-            ))}
+       setAvailable(true)
     console.log('hh')
 };
 // --------------------------------------------------------
@@ -107,13 +155,13 @@ const handleAvailableplayers = () => {
               outline-[#86867f88]'>
             <button 
                         className={`rounded-s-2xl py-4 px-6 ${available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
-                        onClick={togglePlayers}
+                        onClick={() => { setAvailable(true); }}
                     >
                         Available
                     </button>
                     <button 
                         className={`rounded-e-2xl py-4 px-6 ${!available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
-                        onClick={togglePlayers}
+                        onClick={() => { setAvailable(false); }}
                     >
                         Selected ({selected.length})
                     </button>
@@ -124,6 +172,7 @@ const handleAvailableplayers = () => {
        {!available && <Selects selected={selected}  
                                 handleRemoveFromSelected={handleRemoveFromSelected} 
                                 handleAvailableplayers={handleAvailableplayers} 
+                               
                                 />}
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
                 {

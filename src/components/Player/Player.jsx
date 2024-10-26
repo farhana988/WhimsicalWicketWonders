@@ -2,17 +2,20 @@
 import PropTypes from 'prop-types'
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa";
+// import {   ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Player=({player, handleAddToSelected })=> {
-    // console.log(balance)
+
+
+    const Player=({player, handleAddToSelected  })=> {
     
     const {image,name,country,role,battingType,biddingPrice}=player
-    // const newBalance = balance - biddingPrice
+
   return (
-    <div className='border-2 border-red-700 gap-6 p-4 space-y-3 font-medium rounded-2xl'>
+    <div className='border-2 gap-6 p-4 space-y-3 font-medium rounded-2xl'>
         {/* player image */}
         <img
-        className='h-64 w-full rounded-xl border-2 border-red-400 '
+        className='h-64 w-full rounded-xl border-2  '
         src={image} alt={`${name}`} />
         {/* logo and name */}
         <div className='flex items-center gap-3'>
@@ -43,10 +46,15 @@ const Player=({player, handleAddToSelected })=> {
         {/* price and button */}
         <div className='flex justify-between items-center px-2'>
             <h1>Price: ${biddingPrice}</h1>
-            <button
+                
+            <div
             className='p-3 px-6 rounded-xl bg-[#E7FE29] font-bold '
             onClick={ ()=>handleAddToSelected(player)}
-            >Choose Player</button>
+          
+            
+            >Choose Player</div>
+           
+            
         </div>
     </div>
   )

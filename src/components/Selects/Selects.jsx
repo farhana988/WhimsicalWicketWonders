@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 import Select from '../Select/Select'
 
-function Selects({selected, handleRemoveFromSelected, handleAvailableplayers}) {
+function Selects({selected, handleRemoveFromSelected, handleAvailableplayers }) {
   
   return (
     <div>

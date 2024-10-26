@@ -3,6 +3,8 @@ import logo from '../../assets/images/logo.png'
 import coin from '../../assets/images/coin.png'
 import bgImage from '../../assets/images/bgShadow.png'
 import banner from '../../assets/images/banner-main.png'
+// import {   ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Header({balance,addCredit}) {
@@ -46,6 +48,11 @@ export default function Header({balance,addCredit}) {
                 className='bg-[#E7FE29] text-[#131313] font-bold text-lg p-5 rounded-2xl' >
                     Claim Free Credit
                 </button>
+                    <div className='text-2xl'>
+
+
+                    </div>
+     
                 </div>
             </div>
         </section>
