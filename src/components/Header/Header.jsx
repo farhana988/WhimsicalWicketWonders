@@ -12,7 +12,7 @@ export default function Header({balance,addCredit}) {
   return (
     <div className='container mx-auto my-8'>
         {/* navbar */}
-        <nav className='flex justify-between items-center '>
+        <nav className='flex justify-between items-center'>
             <img src={logo} alt="" />
             <div className='flex gap-5 font-semibold text-lg items-center text-[#131313B3]'>
                 <p>Home</p>
@@ -48,13 +48,10 @@ export default function Header({balance,addCredit}) {
                 className='bg-[#E7FE29] text-[#131313] font-bold text-lg p-5 rounded-2xl' >
                     Claim Free Credit
                 </button>
-                    <div className='text-2xl'>
-
-
-                    </div>
-     
+                    
                 </div>
             </div>
+            
         </section>
 
     </div>

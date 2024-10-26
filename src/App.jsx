@@ -26,7 +26,7 @@ function App() {
       theme: "dark",
       transition: Flip,
       });
-    setBalance(count => count + 99999999);
+    setBalance(count => count + 999999);
    
 };
 
