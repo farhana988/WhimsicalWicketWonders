@@ -49,7 +49,7 @@ import 'react-toastify/dist/ReactToastify.css';
             <h1>Price: ${biddingPrice}</h1>
                 
             <div
-            className='p-3 px-6 rounded-xl bg-gray-200 font-bold '
+            className='p-3 px-6 rounded-xl bg-gray-200 font-bold hover:bg-[#E7FE29]'
             onClick={ ()=>handleAddToSelected(player)}
           
             

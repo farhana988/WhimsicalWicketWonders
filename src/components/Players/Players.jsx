@@ -56,7 +56,7 @@ function Players({ balance , setBalance}){
             }
             else if (selected.filter(selectedPlayer => selectedPlayer.playerId === player.playerId).length===0)
             {
-                toast.success('successfully selected', {
+                toast.success(`congratulations! ${player.name} successfully selected`, {
                     position: "top-center",
                     autoClose: 2000,
                     hideProgressBar: false,
@@ -151,23 +151,22 @@ const handleAvailableplayers = () => {
              {available ? 'Available Players' : `Selected Players ${selected.length}/6`}
             </h2>
             {/* two buttons */}
-            <div className="sticky top-0 bg-white z-50 shadow-md">
-                <div className='rounded-2xl text-xl text-[#13131399] outline-offset-8 outline
-                outline-[#86867f88] '>
-                        <button 
-                            className={`rounded-s-2xl py-4 px-6 ${available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
-                            onClick={() => { setAvailable(true); }}
-                        >
-                            Available
-                        </button>
-                        <button 
-                            className={`rounded-e-2xl py-4 px-6 ${!available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
-                            onClick={() => { setAvailable(false); }}
-                        >
-                            Selected ({selected.length})
-                        </button>
-                </div>
+            <div className='rounded-2xl text-xl text-[#13131399] outline-offset-8 outline
+            outline-[#86867f88] '>
+                    <button 
+                        className={`rounded-s-2xl py-4 px-6 ${available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
+                        onClick={() => { setAvailable(true); }}
+                    >
+                        Available
+                    </button>
+                    <button 
+                        className={`rounded-e-2xl py-4 px-6 ${!available ? 'bg-[#E7FE29] font-bold text-black' : ''}`}
+                        onClick={() => { setAvailable(false); }}
+                    >
+                        Selected ({selected.length})
+                    </button>
             </div>
+            
        </div>
       
        {/* show all player cart */}
