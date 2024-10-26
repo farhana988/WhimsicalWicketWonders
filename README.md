@@ -3,6 +3,7 @@
 
 Whimsical Wicket Wonders is an engaging and interactive cricket team selection app that allows users to build their dream cricket team. With a vibrant user interface and real-time feedback, users can select players based on their bidding prices while managing their budget effectively. This project combines the thrill of cricket with an intuitive user experience, ensuring that fans can immerse themselves in the world of fantasy cricket.
 
+- **live  link:** https://voluble-truffle-e5b43d.netlify.app/
 
 ## Technologies Used
 
