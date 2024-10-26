@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
     const {image,name,country,role,battingType,biddingPrice}=player
 
   return (
-    <div className='border-2 gap-6 p-4 space-y-3 font-medium rounded-2xl'>
+    <div className='border-2 gap-6 p-6 space-y-3 font-medium rounded-2xl'>
         {/* player image */}
         <img
         className='h-64 w-full rounded-xl border-2  '
@@ -26,29 +26,30 @@ import 'react-toastify/dist/ReactToastify.css';
         </div>
         {/* country and role */}
         <div className='flex justify-between px-2'>
-            <div className='flex items-center gap-5'>
+            <div className='flex items-center gap-5 text-[#858080]'>
                 
                 <FaFlag 
                 style={{ fontSize: '20px'}}
                 ></FaFlag>
                 
-                <p>{country}</p>
+                <p className='text-[#858080]'>{country}</p>
             </div>
-            <p>{role}</p>
+            <p className='btn bg-gray-200 p-3 rounded-xl'>{role}</p>
         </div>
 
         {/* batting type */}
-        <p className='px-2'>Rating</p>
-        <div className='flex justify-between px-2'>
+        <hr />
+        <p className='px-2 font-semibold'>Rating</p>
+        <div className='flex justify-between px-2 font-semibold'>
             <h1>Batting Type:</h1>
-            <h2>{battingType}</h2>
+            <h2 className='text-[#858080]'>{battingType}</h2>
         </div>
         {/* price and button */}
-        <div className='flex justify-between items-center px-2'>
+        <div className='flex justify-between items-center px-2 font-semibold'>
             <h1>Price: ${biddingPrice}</h1>
                 
             <div
-            className='p-3 px-6 rounded-xl bg-[#E7FE29] font-bold '
+            className='p-3 px-6 rounded-xl bg-gray-200 font-bold '
             onClick={ ()=>handleAddToSelected(player)}
           
             
